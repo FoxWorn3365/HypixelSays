@@ -1,0 +1,32 @@
+name: HypixelSays
+version: 0.2
+api: 
+  - 5.0.0
+  - 4.0.0
+
+main: FoxWorn3365\HypixelSays\Core
+author: FoxWorn3365
+website: https://github.com/FoxWorn3365/HypixelSays
+description: Add the "Hypixel Says" minigame to your PocketMine-MP server!
+
+commands:
+  hypixelsays:
+    description: The main Hypixel Says command
+    usage: "/hypixelsays [arena|info] [<>...]"
+    aliases:
+      - hs
+      - hsays
+      - hypixels
+    permission: hypixelsays.base
+    permission-message: "You do not have permission to use the base command!"
+
+permissions:
+  hypixelsays.base:
+    description: "Allows users to use the base command"
+    default: true
+  hypixelsays.join:
+    description: "Allows users to join arenas"
+    default: true
+  hypixelsays.admin:
+    description: "Allows users to use admin command"
+    default: op
